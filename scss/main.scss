@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+/* Resets CSS */
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+html {
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #e43d00 !important;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: rgba($color: #e43d00, $alpha: 0.75) !important;
+  }
+}
+/* Header Css */
+.navbar-brand {
+  font-weight: 900;
+  color: #0b006b;
+  span {
+    color: #e43d00;
+  }
+}
+
+.hero h1 {
+  color: #0b006b;
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #0b006b;
+  color: #f1f1f1;
+  small {
+    color: #e43d00;
+  }
+  a {
+    color: rgba($color: #f1f1f1, $alpha: 0.75);
+  }
+}
