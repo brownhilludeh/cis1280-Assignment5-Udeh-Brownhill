@@ -40,6 +40,14 @@ a {
   text-transform: capitalize;
 }
 
+a.active {
+  color: #e43d00 !important;
+}
+
+.dropdown-menu a.active {
+  background-color: rgba(11, 0, 107, 0.25);
+}
+
 footer {
   background-color: #0b006b;
   color: #f1f1f1;
@@ -49,4 +57,15 @@ footer small {
 }
 footer a {
   color: rgba(241, 241, 241, 0.75);
+}
+
+/* Hoovers */
+.page-banner {
+  height: 25vh;
+  background-color: rgba(228, 61, 0, 0.25);
+  color: #0b006b;
+}
+
+.breadcrumb a {
+  color: #0b006b;
 }/*# sourceMappingURL=main-dev.css.map */

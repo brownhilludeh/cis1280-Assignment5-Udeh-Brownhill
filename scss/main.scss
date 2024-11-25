@@ -54,6 +54,7 @@ a {
 .navbar-brand {
   font-weight: 900;
   color: #0b006b;
+
   span {
     color: #e43d00;
   }
@@ -62,6 +63,14 @@ a {
 .hero h1 {
   color: #0b006b;
   text-transform: capitalize;
+}
+
+a.active {
+  color: #e43d00 !important;
+}
+
+.dropdown-menu a.active {
+  background-color: rgba($color: #0b006b, $alpha: 0.25);
 }
 
 footer {
@@ -73,4 +82,15 @@ footer {
   a {
     color: rgba($color: #f1f1f1, $alpha: 0.75);
   }
+}
+
+/* Hoovers */
+.page-banner {
+  height: 25vh;
+  background-color: rgba($color: #e43d00, $alpha: 0.25);
+  color: #0b006b;
+}
+
+.breadcrumb a {
+  color: #0b006b;
 }

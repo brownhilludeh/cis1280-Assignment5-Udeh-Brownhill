@@ -4,8 +4,7 @@
 	Author: Brownhill Udeh
 	Date: Nov 25, 2024
 	Purpose: CIS-1280 Assignment 5
-	Dependencies: bootstrap
-
+	Dependencies: bootstrap css & js 5.3.2, scss, css, ion-icon 
 ########################
  -->
 <html lang="en">
@@ -13,7 +12,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cis 1280 Assignment 5 Udeh Brownhill </title>
+        <meta name="keywords" content="holland, college, css, hccis, joey, CIS-1280, brownhilludeh" />
+        <meta name="description" content="CIS-1280 Assignment 5 - Website development using Bootstrap Framework" />
+        <meta name="author" content="Brownhill Udeh">
+        <meta name="twitter:description" content="#" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta property="og:description" content="holland, college, css, hccis, joey, CIS-1280, brownhilludeh" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CIS-1280 Assignment 5 Udeh Brownhill" />
+        <link rel="shortcut icon" href="img/x-condoLogo.png" type="image/x-icon">
+        <title>CIS-1280 Assignment 5 Udeh Brownhill :: Welcome</title> 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="public/css/main.css">
@@ -22,70 +31,166 @@
     <body>
 
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-            <div class="container">
-                <a class="navbar-brand" href="#"> X-Condo <span>Store</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="hoovers.html">Hoovers</a></li>
-                                <li><a class="dropdown-item" href="#">Dyson</a></li>
-                                <li><a class="dropdown-item" href="#">Fans</a></li>
-                                <li><a class="dropdown-item" href="#">Microwaves</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Cleaning</a></li>
-                                <li><a class="dropdown-item" href="#">Washing</a></li>
-                                <li><a class="dropdown-item" href="#">Storing</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="warranty.html">Warranty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <header>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"> X-Condo <span>Store</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="hoovers.html">Hoovers</a></li>
+                                    <li><a class="dropdown-item" href="#">Dyson</a></li>
+                                    <li><a class="dropdown-item" href="#">Fans</a></li>
+                                    <li><a class="dropdown-item" href="#">Microwaves</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="#">Washing</a></li>
+                                    <li><a class="dropdown-item" href="#">Storing</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="warranty.html">Warranty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <!-- Main -->
-        <main id="main" class="content">
-            <div class="hero p-5 mb-4 bg-body-tertiary rounded-3">
-                <div class="container py-5">
+        <main id="main" class="content position-relative mt-5">
+            <!-- Hero -->
+            <div class="hero p-2  bg-body-tertiary rounded-3">
+                <div class="container m-5">
                     <div class="row d-flex align-items-center">
-                        <div class="col-8">
+                        <div class="col-md-7">
                             <h1 class="display-5 fw-bold">one customer Store</h1>
                             <p class="col-md-11 fs-4">Power Up Your Life with the Latest Tech! Discover unbeatable deals on the gadgets you love.</p>
                             <a href="#" class="btn btn-primary" type="button"> Shop Now </a>
                             <a href="#" class="btn btn-dark" type="button">Black Friday Deals</a>
                         </div>
-                        <div class="col-4">
-                            <img src="img/hoover.png" alt="hoovers black friday deals" class="img-thumbnail">
+                        <div class="col-md-5">
+                            <img src="img/hoover.png" alt="hoovers black friday deals" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Hot Deal -->
+            <section class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/hairdryer-svgrepo-com.png" class="card-img-top p-3" alt="hair dryer">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/shaver-svgrepo-com.png" class="card-img-top p-3" alt="shaver">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/hairdryer-svgrepo-com.png" class="card-img-top p-3" alt="hair dryer">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/shaver-svgrepo-com.png" class="card-img-top p-3" alt="shaver">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Black Fridays -->
+            <section class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/hairdryer-svgrepo-com.png" class="card-img-top p-3" alt="hair dryer">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/shaver-svgrepo-com.png" class="card-img-top p-3" alt="shaver">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/hairdryer-svgrepo-com.png" class="card-img-top p-3" alt="hair dryer">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/shaver-svgrepo-com.png" class="card-img-top p-3" alt="shaver">
+                            <div class="card-body">
+                                <h2 class="card-title">click n claim</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Get 100% off</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- Footer -->
-        <footer>
-            <div class=" container text-center py-3">
+        <footer class="mt-5">
+            <div class=" container text-center py-3 ">
                 Copyright reserved &copy; x-condo.hccis 2024. |
                 <small>designed by </small>
                 <a href="https://brownhilludeh.brownportal.com">Brownhill Udeh</a>
